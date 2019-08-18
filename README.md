@@ -61,7 +61,7 @@ I used the firmware [HAMP0003.bin](https://github.com/JohnMH/chipone_ts/raw/mast
 ### Accelerometer
 By default the accelerometer is rotate by 90°. Fix is by copy the file `61-sensor-local.hwdb` to `/etc/udev/hwdb.d/`.
 Afterwards run the commands `systemd-hwdb update` and `udevadm trigger -v -p DEVNAME=/dev/iio:device0`.
-With the command `udevadm info -export-db | grep ACCEL` you can check if the new settings is deteced.
+With the command `udevadm info -export-db | grep ACCEL` you can check if the new settings are deteced.
 Reboot the system.
 
 systemd integration status: https://github.com/systemd/systemd/pull/13351
@@ -74,5 +74,7 @@ Source: https://unix.stackexchange.com/questions/68369/rotate-console-on-startup
  Take also a look to the to the following repos
  * [willyneutron](https://github.com/willyneutron/lubuntu_in_chuwi_Hi10Pro) repo, which is more detailed!
  * https://github.com/danielotero/linux-on-hi10
+ * https://github.com/Dax89/chuwi-dev
+ * https://github.com/JohnMH/chipone_ts
 
 
